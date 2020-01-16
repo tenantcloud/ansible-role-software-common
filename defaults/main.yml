@@ -1,0 +1,8 @@
+---
+cask_apps:
+  - iterm2
+  - slack
+  - google-chrome
+  - firefox
+  - tunnelblick
+  - authy

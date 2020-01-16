@@ -1,0 +1,6 @@
+---
+    - include: brew-tap.yml
+    - include: brewcask.yml
+    - include: omzsh.yml
+    - include: language-pack.yml
+
