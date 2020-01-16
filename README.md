@@ -13,8 +13,6 @@ Ansible role for install common software. This role include install:
 Requirements
 ------------
 
-https://pass.tenants.co/cred/detail/847/
-
 Role Variables
 --------------
 
@@ -24,7 +22,7 @@ Dependencies
 ------------
 
   - homebrew
-  - python@2
+  - python@3
   - ansible
 
 Example Playbook
