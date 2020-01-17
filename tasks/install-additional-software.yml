@@ -1,0 +1,13 @@
+---
+  - name: Install Applications from Homebrew Cask
+    homebrew_cask:
+      name: '{{ item }}'
+      options: force
+    loop:
+      - iterm2
+      - slack
+      - google-chrome
+      - firefox
+      - tunnelblick
+      - authy
+    become: false

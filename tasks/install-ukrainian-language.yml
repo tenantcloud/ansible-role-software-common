@@ -1,5 +1,5 @@
 ---
 - name: Copy language files
   copy:
-    src: "{{ role_path }}/files/unicode/"
+    src: "files/unicode/"
     dest: "/Users/{{ work_user }}/Library/Keyboard Layouts/"

@@ -1,6 +1,6 @@
 ---
-    - include: brew-tap.yml
-    - include: brewcask.yml
-    - include: omzsh.yml
-    - include: language-pack.yml
+    - include: add-brew-tap.yml.yml
+    - include: install-additional-software.yml
+    - include: install-oh-my-zsh.yml
+    - include: install-ukrainian-language.yml
 
