@@ -30,6 +30,8 @@ Example Playbook
 
     - hosts: localhost
       become: no
+      vars:
+        work_user: "user"
       roles:
         - tenantcloud.ansible_role_software_common
 
