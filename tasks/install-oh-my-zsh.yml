@@ -1,0 +1,17 @@
+---
+  - name: Clone omzsh
+    git:
+      repo: "https://github.com/robbyrussell/oh-my-zsh.git"
+      dest: /Users/{{ work_user }}/.oh-my-zsh
+
+  - name: Copy .zshrc template
+    copy:
+      src: /Users/{{ work_user }}/.oh-my-zsh/templates/zshrc.zsh-template
+      dest: /Users/{{ work_user }}/.zshrc
+      remote_src: yes
+
+  - name: Setting default shell
+    become: true
+    shell: "chsh -s $(which zsh)"
+
+

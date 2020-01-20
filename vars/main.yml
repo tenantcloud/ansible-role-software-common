@@ -1,0 +1,5 @@
+---
+# vars file for tenantcloud.ansible_role_software_common
+
+work_user: "user"
+ansible_python_interpreter: "/usr/local/bin/python3"
