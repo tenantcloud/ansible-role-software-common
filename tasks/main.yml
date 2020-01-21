@@ -1,5 +1,5 @@
 ---
-    - include: add-brew-tap.yml
-    - include: install-additional-software.yml
-    - include: install-oh-my-zsh.yml
-    - include: install-ukrainian-language.yml
+- include: add-brew-tap.yml
+- include: install-additional-software.yml
+- include: install-oh-my-zsh.yml
+- include: install-ukrainian-language.yml
