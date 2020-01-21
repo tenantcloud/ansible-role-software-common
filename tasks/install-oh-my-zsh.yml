@@ -10,3 +10,8 @@
     src: /Users/{{ work_user }}/.oh-my-zsh/templates/zshrc.zsh-template
     dest: /Users/{{ work_user }}/.zshrc
     remote_src: true
+
+- name: Setting default shell
+  become: true
+  shell: "chsh -s $(which zsh)"
+  tags: monit,skip_ansible_lint
