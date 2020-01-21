@@ -13,5 +13,5 @@
 
 - name: Setting default shell
   become: true
-  shell: "chsh -s $(which zsh)"
-  tags: monit,skip_ansible_lint
+  shell: chsh -s $(which zsh)
+  changed_when: false
