@@ -1,17 +1,17 @@
 ---
-  - name: Clone omzsh
-    git:
-      repo: "https://github.com/robbyrussell/oh-my-zsh.git"
-      dest: /Users/{{ work_user }}/.oh-my-zsh
+- name: Clone omzsh
+  git:
+    repo: "https://github.com/robbyrussell/oh-my-zsh.git"
+    dest: /Users/{{ work_user }}/.oh-my-zsh
+    version: master
 
-  - name: Copy .zshrc template
-    copy:
-      src: /Users/{{ work_user }}/.oh-my-zsh/templates/zshrc.zsh-template
-      dest: /Users/{{ work_user }}/.zshrc
-      remote_src: yes
+- name: Copy .zshrc template
+  copy:
+    src: /Users/{{ work_user }}/.oh-my-zsh/templates/zshrc.zsh-template
+    dest: /Users/{{ work_user }}/.zshrc
+    remote_src: true
 
-  - name: Setting default shell
-    become: true
-    shell: "chsh -s $(which zsh)"
-
-
+- name: Setting default shell
+  become: true
+  shell: chsh -s $(which zsh)
+  changed_when: false

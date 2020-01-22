@@ -1,3 +1,4 @@
+---
 galaxy_info:
   author: Oleh Debretseni
   description: install common sotware
@@ -8,12 +9,12 @@ galaxy_info:
   min_ansible_version: 2.4
 
   platforms:
-  - name: MacOS
-    versions:
-      - Catalina
-      - Mojave
+    - name: MacOS
+      versions:
+        - "Catalina"
+        - "Mojave"
 
   galaxy_tags:
-      - macos
-      - mac
-      - software
+    - macos
+    - mac
+    - software
