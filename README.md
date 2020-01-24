@@ -3,6 +3,7 @@ tenantcloud.ansible_role_software_common
 
 Ansible role for install common software. This role include install:
 
+  - python@3
   - iterm2
   - slack
   - google-chrome
