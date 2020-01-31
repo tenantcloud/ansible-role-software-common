@@ -33,6 +33,8 @@ Example Playbook
       become: no
       vars:
         work_user: "user"
+        mas_installed_apps:
+          - { id: 497799835, name: "Xcode" }
       roles:
         - tenantcloud.ansible_role_software_common
 
