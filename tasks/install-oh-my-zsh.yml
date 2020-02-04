@@ -11,6 +11,12 @@
     dest: /Users/{{ work_user }}/.zshrc
     remote_src: true
 
+- name: Change oh-my-zsh standart theme
+  lineinfile:
+    path: /Users/{{ work_user }}/.zshrc
+    regexp: '^ZSH_THEME='
+    line: 'ZSH_THEME="kafeitu"'
+
 - name: Set zsh as default shell
   user: name={{ work_user }} shell=/bin/zsh
   become: true
