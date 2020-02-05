@@ -5,7 +5,6 @@
     options: force
   loop:
     - python@3
-  become: false
 
 - name: Install Applications from Homebrew Cask
   homebrew_cask:
@@ -18,4 +17,3 @@
     - firefox
     - tunnelblick
     - authy
-  become: false
