@@ -1,4 +1,11 @@
 ---
+- name: Install Applications from Homebrew
+  homebrew:
+    name: '{{ item }}'
+    options: force
+  loop:
+    - python@3
+
 - name: Install Applications from Homebrew Cask
   homebrew_cask:
     name: '{{ item }}'
@@ -10,4 +17,3 @@
     - firefox
     - tunnelblick
     - authy
-  become: false
