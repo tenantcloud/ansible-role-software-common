@@ -1,5 +1,6 @@
 ---
 galaxy_info:
+  role_name: software-common
   author: Oleh Debretseni
   description: install common sotware
   company: "TenantCloud LLC"
