@@ -36,7 +36,7 @@ Example Playbook
         mas_installed_apps:
           - { id: 497799835, name: "Xcode" }
       roles:
-        - tenantcloud.ansible_role_software_common
+        - tenantcloud.software_common
 
 License
 -------
