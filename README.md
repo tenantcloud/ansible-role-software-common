@@ -1,4 +1,4 @@
-tenantcloud.ansible_role_software_common
+tenantcloud.software_common
 =========
 
 Ansible role for install common software. This role include install:
