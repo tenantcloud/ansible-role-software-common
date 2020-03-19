@@ -17,5 +17,12 @@
     regexp: '^ZSH_THEME='
     line: 'ZSH_THEME="kafeitu"'
 
+- name: Oh-my-zsh change showing warning
+  lineinfile:
+    dest: /Users/{{ work_user }}/.zshrc
+    line: ZSH_DISABLE_COMPFIX="true"
+    insertafter: ZSH_THEME="kafeitu"
+    state: present
+
 - name: Set zsh as default shell
   user: name={{ work_user }} shell=/bin/zsh
