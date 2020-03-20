@@ -17,7 +17,7 @@ Requirements
 Role Variables
 --------------
 
-work_user: "user" os username
+ansible_user: "user" os username
 
 Dependencies
 ------------
@@ -32,7 +32,7 @@ Example Playbook
     - hosts: localhost
       become: no
       vars:
-        work_user: "user"
+        ansible_user: "user"
         mas_installed_apps:
           - { id: 497799835, name: "Xcode" }
       roles:
