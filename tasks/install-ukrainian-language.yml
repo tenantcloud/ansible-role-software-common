@@ -2,8 +2,7 @@
 - name: Copy language files
   copy:
     src: "files/unicode/"
-    dest: "/Users/{{ work_user }}/Library/Keyboard Layouts/"
+    dest: "$HOME/Library/Keyboard Layouts/"
 
 - name: Copy info file
-  become: true
-  template: src=info.txt.j2 dest=/Users/{{ work_user }}/Desktop/common_software.txt
+  template: src=info.txt.j2 dest=$HOME/Desktop/common_software.txt

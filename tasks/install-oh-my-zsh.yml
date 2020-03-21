@@ -2,20 +2,27 @@
 - name: Clone omzsh
   git:
     repo: "https://github.com/robbyrussell/oh-my-zsh.git"
-    dest: /Users/{{ work_user }}/.oh-my-zsh
+    dest: $HOME/.oh-my-zsh
     version: master
 
 - name: Copy .zshrc template
   copy:
-    src: /Users/{{ work_user }}/.oh-my-zsh/templates/zshrc.zsh-template
-    dest: /Users/{{ work_user }}/.zshrc
+    src: $HOME/.oh-my-zsh/templates/zshrc.zsh-template
+    dest: $HOME/.zshrc
     remote_src: true
 
 - name: Change oh-my-zsh standart theme
   lineinfile:
-    path: /Users/{{ work_user }}/.zshrc
+    path: $HOME/.zshrc
     regexp: '^ZSH_THEME='
     line: 'ZSH_THEME="kafeitu"'
 
+- name: Oh-my-zsh change showing warning
+  lineinfile:
+    dest: $HOME/.zshrc
+    line: ZSH_DISABLE_COMPFIX="true"
+    insertafter: ZSH_THEME="kafeitu"
+    state: present
+
 - name: Set zsh as default shell
-  user: name={{ work_user }} shell=/bin/zsh
+  user: name={{ ansible_user }} shell=/bin/zsh
