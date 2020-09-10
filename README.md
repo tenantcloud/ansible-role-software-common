@@ -10,9 +10,12 @@ Ansible role for install common software. This role include install:
   - firefox
   - tunnelblick
   - authy
+  - wireguard
 
 Requirements
 ------------
+
+ansible-galaxy install geerlingguy.homebrew geerlingguy.mas
 
 Role Variables
 --------------
@@ -34,10 +37,14 @@ Example Playbook
       vars:
         ansible_user: "user"
         mas_installed_apps:
-          - { id: 497799835, name: "Xcode" }
+          - { id: 1451685025, name: "WireGuard" }
       roles:
+        - geerlingguy.homebrew
+        - geerlingguy.mas
         - tenantcloud.software_common
-
+       environment:
+         PATH: "/usr/local/bin:{{ ansible_env.PATH }}"
+       
 License
 -------
 
