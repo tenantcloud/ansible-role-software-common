@@ -19,6 +19,8 @@ jobs:
         #   playbook_1.yml
         #   playbook_2.yml
         targets: "./"
+        skip_list:
+          - '106'
         # [optional]
         # Arguments to be passed to the ansible-lint
         # Options:
