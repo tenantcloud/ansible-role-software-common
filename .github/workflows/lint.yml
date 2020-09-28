@@ -19,8 +19,6 @@ jobs:
         #   playbook_1.yml
         #   playbook_2.yml
         targets: "./"
-        skip_list:
-          - 106
         # [optional]
         # Arguments to be passed to the ansible-lint
         # Options:
@@ -42,4 +40,4 @@ jobs:
         #                         path to directories or files to skip. This option is
         #                         repeatable.
         #   -c C                  Specify configuration file to use. Defaults to ".ansible-lint"
-        args: "-q"
+        args: -x 106
