@@ -10,14 +10,14 @@
     src: $HOME/.oh-my-zsh/templates/zshrc.zsh-template
     dest: $HOME/.zshrc
     remote_src: true
-    mode: 0777
+    mode: 0644
 
 - name: Change oh-my-zsh standart theme
   lineinfile:
     path: $HOME/.zshrc
     regexp: '^ZSH_THEME='
     line: 'ZSH_THEME="kafeitu"'
-    mode: 0777
+    mode: 0644
 
 - name: Oh-my-zsh change showing warning
   lineinfile:
@@ -25,7 +25,7 @@
     line: ZSH_DISABLE_COMPFIX="true"
     insertafter: ZSH_THEME="kafeitu"
     state: present
-    mode: 0777
+    mode: 0644
 
 - name: Set zsh as default shell
   user:

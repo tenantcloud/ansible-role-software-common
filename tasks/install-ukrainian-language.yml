@@ -3,7 +3,7 @@
   copy:
     src: "files/unicode/"
     dest: "$HOME/Library/Keyboard Layouts/"
-    mode: 0777
+    mode: 0644
 
 - name: Copy info file
   template: src=info.txt.j2 dest=$HOME/Desktop/common_software.txt mode="0777"
