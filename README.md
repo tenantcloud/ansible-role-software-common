@@ -1,6 +1,6 @@
 
-<img src="https://github.com/tenantcloud/ansible-role-software-common/workflows/Ansible Lint/badge.svg?branch-master" alt="">
-<img src="https://github.com/tenantcloud/ansible-role-software-common/workflows/Yaml Lint/badge.svg?branch-master" alt="">
+![Ansible Lint](https://github.com/tenantcloud/ansible-role-software-common/workflows/Ansible%20Lint/badge.svg?branch-master)
+![Yaml Lint](https://github.com/tenantcloud/ansible-role-software-common/workflows/Yaml%20Lint/badge.svg?branch-master)
 
 tenantcloud.software_common
 =========
@@ -36,19 +36,21 @@ Dependencies
 Example Playbook
 ----------------
 
-    - hosts: localhost
-      become: no
-      vars:
-        ansible_user: "user"
-        mas_installed_apps:
-          - { id: 1451685025, name: "WireGuard" }
-      roles:
-        - geerlingguy.homebrew
-        - geerlingguy.mas
-        - tenantcloud.software_common
-       environment:
-         PATH: "/usr/local/bin:{{ ansible_env.PATH }}"
-       
+```yaml
+- hosts: localhost
+  become: no
+  vars:
+    ansible_user: "user"
+    mas_installed_apps:
+      - { id: 1451685025, name: "WireGuard" }
+  roles:
+    - geerlingguy.homebrew
+    - geerlingguy.mas
+    - tenantcloud.software_common
+   environment:
+     PATH: "/usr/local/bin:{{ ansible_env.PATH }}"
+```
+
 License
 -------
 
