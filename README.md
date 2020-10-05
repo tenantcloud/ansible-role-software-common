@@ -47,8 +47,8 @@ Example Playbook
     - geerlingguy.homebrew
     - geerlingguy.mas
     - tenantcloud.software_common
-   environment:
-     PATH: "/usr/local/bin:{{ ansible_env.PATH }}"
+  environment:
+    PATH: "/usr/local/bin:{{ ansible_env.PATH }}"
 ```
 
 License
