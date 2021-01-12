@@ -19,7 +19,7 @@ Ansible role for install common software. This role include install:
 Requirements
 ------------
 
-ansible-galaxy install geerlingguy.homebrew geerlingguy.mas
+ansible-galaxy collection install community.general
 
 Role Variables
 --------------
