@@ -1,6 +1,5 @@
 
-![Ansible Lint](https://github.com/tenantcloud/ansible-role-software-common/workflows/Ansible%20Lint/badge.svg?branch-master)
-![Yaml Lint](https://github.com/tenantcloud/ansible-role-software-common/workflows/Yaml%20Lint/badge.svg?branch-master)
+![Lint Ansible Roles](https://github.com/tenantcloud/ansible-role-software-common/workflows/Lint%20Ansible%20Roles/badge.svg?branch-master)
 
 tenantcloud.software_common
 =========
